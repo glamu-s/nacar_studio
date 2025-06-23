@@ -20,19 +20,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                    <a class="nav-link active" style="color: #f6587f;" aria-current="page" href="D:\Salón de belleza\index.html">Inicio</a>
+                    <a class="nav-link active" style="color: #f6587f;" aria-current="page" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" style="color: #f6587f;" href="D:\Salón de belleza\nosotros.html">Nosotros</a>
+                    <a class="nav-link" style="color: #f6587f;" href="nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" style="color: #f6587f;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Servicios
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="D:\Salón de belleza\cabello.html">Servicio 1</a></li>
-                        <li><a class="dropdown-item" href="D:\Salón de belleza\maquillaje.html">Servicio 2</a></li>
-                        <li><a class="dropdown-item" href="D:\Salón de belleza\uñas.html">Servicio 3</a></li>
+                        <li><a class="dropdown-item" href="cabello.html">Servicio 1</a></li>
+                        <li><a class="dropdown-item" href="maquillaje.html">Servicio 2</a></li>
+                        <li><a class="dropdown-item" href="uñas.html">Servicio 3</a></li>
                     </ul>
                     </li>
                     <li class="nav-item">
@@ -175,18 +175,18 @@
             <section id="formulario" style="background-color: #ffdde0;" class="py-5">
                 <div class="container">
                     <h2 class="text-center mb-4 display-5" style="color: #f6587f;">Agendar cita</h2>
-                    <form class="mx-auto" style="max-width: 600px;">
+                    <form action="https://formspree.io/f/xvgrbrra" method="post" class="mx-auto" style="max-width: 600px;">
                         <div class="mb-3">
                             <label for="nombre" class="form-label text-secondary">Nombre completo</label>
-                            <input type="text" class="form-control shadow-sm" id="Nombre" placeholder="Ej. María Perez" required>
+                            <input type="text" class="form-control shadow-sm" id="Nombre" name="nombre" placeholder="Ej. María Perez" required>
                         </div>
                         <div class="mb-3">
                             <label for="correo" class="form-label text-secondary">Correo electrónico</label>
-                            <input type="email" class="form-control shadow-sm" id="correo" placeholder="nombre@ejemplo.com" required>
+                            <input type="email" class="form-control shadow-sm" id="correo" name="correo" placeholder="nombre@ejemplo.com" required>
                         </div>
                         <div class="mb-3">
                             <label for="curso" class="form-label text-secondary">Selecciona un servicio</label>
-                            <select class="form-select shadow-sm" id="curso" required>
+                            <select class="form-select shadow-sm" id="curso" name="curso" required>
                                 <option selected disabled>-- Elige una opción --</option>
                                 <option>Corte de cabello</option>
                                 <option>Uñas acrilicas</option>
@@ -198,7 +198,7 @@
                         </div>
                         <div class="mb-4">
                             <label for="mensaje" class="form-label text-secondary">Comentarios o dudas</label>
-                            <textarea class="form-control shadow-sm" id="mensaje" rows="3" placeholder="¿Tienes alguna pregunta?"></textarea>
+                            <textarea class="form-control shadow-sm" name="mensaje" id="mensaje" rows="3" placeholder="¿Tienes alguna pregunta?"></textarea>
                         </div>
                         <button type="submit" class="btn btn-lg w-100" style="background-color:#fff1f2;color:#f6587f;">Enviar cita</button>
                     </form>
